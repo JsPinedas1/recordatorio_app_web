@@ -1,7 +1,18 @@
+hr {
+  margin-left: 300px;
+  width: 75% !important;
+}
+
 .div-food-container {
   align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-top: 20px;
+}
+
+.div-food-title-container {
+  display: flex;
+  margin-left: 350px;
+  margin-top: 50px;
 }
