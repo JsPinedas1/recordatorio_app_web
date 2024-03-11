@@ -31,7 +31,7 @@ export class LoginComponent implements OnInit {
         console.log("dataUsuarios", dataUsuarios);
         const dataResponse = this.validateDataUser(correo, contrasena, dataUsuarios);
         if (dataResponse !== "") {
-          this.toastr.success(this.CONSTANTS.MESSAGE.MESSAGE_LOGIN_WELCOME.replace("{}",dataResponse));
+          this.toastr.success(this.CONSTANTS.MESSAGE.MESSAGE_LOGIN_WELCOME.replace("{}", dataResponse));
           this.router.navigate(["/alimento"]);
         } else {
           this.toastr.info(this.CONSTANTS.ALERT.ERROR_LOGIN_SING_IN);
