@@ -29,8 +29,9 @@ export class LoginComponent implements OnInit {
     this.loginService.getLoginUser().subscribe({
       next: dataUsuarios => {
         console.log("dataUsuarios", dataUsuarios);
-        if (this.validateDataUser(correo, contrasena, dataUsuarios)) {
-          this.toastr.success(this.CONSTANTS.MESSAGE.MESSAGE_LOGIN_WELCOME);
+        const dataResponse = this.validateDataUser(correo, contrasena, dataUsuarios);
+        if (dataResponse !== "") {
+          this.toastr.success(this.CONSTANTS.MESSAGE.MESSAGE_LOGIN_WELCOME.replace("{}",dataResponse));
           this.router.navigate(["/alimento"]);
         } else {
           this.toastr.info(this.CONSTANTS.ALERT.ERROR_LOGIN_SING_IN);
@@ -49,12 +50,12 @@ export class LoginComponent implements OnInit {
   }
 
   validateDataUser (correo: string, contrasena: string, dataUser: any) {
-    let validator: boolean = false;
+    let userName: string = "";
     dataUser.map((user: any) => {
       if (user.correo.toString().toLowerCase() === correo.toString().toLowerCase() &&  user.contrasena.toString().toLowerCase() === contrasena.toString().toLowerCase()) {
-        validator = true;
+        userName = user.nombre.toString();
       }
     })
-    return validator;
+    return userName;
   }
 }

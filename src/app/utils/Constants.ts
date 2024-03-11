@@ -17,7 +17,7 @@ export namespace LABEL {
 }
 
 export namespace MESSAGE {
-  export const MESSAGE_LOGIN_WELCOME = "Bienvenido";
+  export const MESSAGE_LOGIN_WELCOME = "Bienvenido {}";
 }
 
 export namespace STYLE {

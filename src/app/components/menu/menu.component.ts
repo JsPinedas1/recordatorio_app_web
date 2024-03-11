@@ -18,8 +18,7 @@ export class MenuComponent implements OnInit {
     private router: Router,
   ) { }
 
-  ngOnInit() {
-  }
+  ngOnInit() { }
 
   diary() {
     if (!this.openDiary){
