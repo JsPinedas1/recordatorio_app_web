@@ -1,26 +1,54 @@
-.sidebar {
-  width: 200px;
+.menuSideBarSeparator {
+  background-color: #FFFFFF;
+}
+
+.menuSideBar {
+  background-color: #94B5ED;
   height: 100%;
-  background-color: #f0f0f0;
+  left: 0;
+  margin-top: 100px;
   position: fixed;
   top: 0;
-  left: 0;
-  padding-top: 20px;
+  width: 250px;
 }
 
-.sidebar ul {
+.menuSideBar li {
+  margin-bottom: 1px;
+  cursor: pointer;
+}
+
+.menuSideBar ul li:hover {
+  background-color: #363833;
+}
+
+.menuSideBar ul {
   list-style-type: none;
   padding: 0;
+  background-color: #FFFFFF;
+  margin-top: 2px;
 }
 
-.sidebar ul li {
+.menuSideBar ul li {
   padding: 10px 20px;
+  background-color: #4A516B;
 }
 
-.sidebar ul li a {
+.menuSideBar ul li a {
   text-decoration: none;
-  color: #333;
+  color: #FFFFFF;
 }
 
-.sidebar ul li a:hover {
-  background-color: #ddd;}
+.menuSideBarSelected {
+  cursor: default !important;
+  background-color: #4D5E9E !important;
+}
+
+.menuSideBarSelected:hover {
+  background-color: #4D5E9E !important;
+}
+
+@media only screen and (max-width: 543px) {
+  .menuSideBar {
+    margin-top: 110px;
+  }
+}

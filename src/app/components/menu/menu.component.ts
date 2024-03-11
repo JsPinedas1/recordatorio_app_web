@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Router } from "@angular/router";
-import { LABEL } from 'src/app/utils/Constants';
+import * as Constants from 'src/app/utils/Constants';
 
 @Component({
   selector: 'app-menu',
@@ -12,7 +12,7 @@ export class MenuComponent implements OnInit {
   @Input() openDiary: boolean = false;
   @Input() openFood: boolean = false;
 
-  CONSTANTS: any = LABEL;
+  CONSTANTS: any = Constants;
 
   constructor(
     private router: Router,
