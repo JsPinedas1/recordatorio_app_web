@@ -1,0 +1,28 @@
+button {
+  color: white;
+  cursor: pointer;
+  border-radius: 10px;
+  font-family: "Assistant";
+  font-size: 25pt;
+  font-weight: bold;
+}
+
+.buttonMain {
+  background-color: #1E4A26;
+  height: 50px;
+  width: 410px;
+}
+
+.buttonMain:hover {
+  background-color: #7FB848;
+}
+
+.buttonOff {
+  background-color: #46B682;
+  height: 50px;
+  width: 410px;
+}
+
+.buttonOff:hover {
+  background-color: #62784D;
+}

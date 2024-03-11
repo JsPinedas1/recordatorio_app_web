@@ -1,24 +1,32 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { AppRoutingModule } from "./app-routing.module";
+import { AppComponent } from "./app.component";
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { BrowserModule } from "@angular/platform-browser";
+import { HttpClientModule } from '@angular/common/http';
+import { NgModule } from "@angular/core";
+import { ToastrModule } from "ngx-toastr";
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { AlimentosComponent } from './alimentos/alimentos.component';
-import { AgendaComponent } from './agenda/agenda.component';
-import { LoginComponent } from './login/login.component';
+import { AgendaComponent } from "./agenda/agenda.component";
+import { AlimentosComponent } from "./alimentos/alimentos.component";
+import { ButtonComponent } from "./components/button/button.component";
+import { LoginComponent } from "./login/login.component";
+import { RegistroComponent } from './registro/registro.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AlimentosComponent,
     AgendaComponent,
-    LoginComponent
+    AlimentosComponent,
+    ButtonComponent,
+    LoginComponent,
+    RegistroComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HttpClientModule,
+    ToastrModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]

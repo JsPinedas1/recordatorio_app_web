@@ -1,35 +1,28 @@
-<div class="container align-items-center">
-  <div class="row align-items-center">
-
-    <div class="col-xs-10 col-lg-5 container">
-      <div class="row">
-
-        <div class="my-2 row">
-          <h1 class="text-center">Ingreso</h1>
-        </div>
-        <div *ngIf="error!=''">
-          <div class="alert alert-danger" role="alert">
-            Usuario o contraseña incorrectos
-          </div>
-        </div>
-        <div class="mb-3 row">
-          <label for="staticEmail" class="col-lg-3 col-form-label">Usuario</label>
-          <div class="col-lg-9  ">
-            <input #usuario type="text" class="form-control" placeholder="Usuario">
-          </div>
-        </div>
-        <div class="mb-3 row">
-          <label for="inputPassword" class="col-lg-3 col-form-label">Contraseña</label>
-          <div class="col-lg-9">
-            <input #contrasena type="password" class="form-control" placeholder="*********">
-          </div>
-        </div>
-        <div class="col-12 text-center mt-3">
-          <!-- <button (click)="loginUsuario(usuario.value, contrasena.value)" type="button" -->
-          <button type="button"
-            class="btn btn-info col-8">Ingresar</button>
-        </div>
-      </div>
+<div class="div-login-container">
+  <div class="div-login-input-container">
+    <label for="staticEmail" >{{ CONSTANTS.LABEL.LOGIN_MAIL }}</label>
+    <div>
+      <input #correo type="text" placeholder={{CONSTANTS.LABEL.LOGIN_MAIL}}>
     </div>
+  </div>
+  <div>
+    <label for="inputPassword">{{ CONSTANTS.LABEL.LOGIN_PASS }}</label>
+    <div>
+      <input #contrasena type="password" placeholder={{CONSTANTS.LABEL.LOGIN_PASS}}>
+    </div>
+  </div>
+  <div class="div-login-button-container">
+    <app-button
+      [buttonText]="CONSTANTS.BUTTON.LOGIN_SING_IN"
+      [style]="CONSTANTS.STYLE.BUTTON_MAIN"
+      (onClick)="getDataUser(correo.value, contrasena.value)"
+    />
+  </div>
+  <div>
+    <app-button
+      [buttonText]="CONSTANTS.BUTTON.LOGIN_SING_UP"
+      [style]="CONSTANTS.STYLE.BUTTON_OFF"
+      (onClick)="createNewUser()"
+    />
   </div>
 </div>

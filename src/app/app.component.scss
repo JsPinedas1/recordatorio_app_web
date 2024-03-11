@@ -1,65 +1,55 @@
-@import url(https://fonts.googleapis.com/css?family=Lato:400,300,100,700,900);
-
-h1,
-p,
-a{
-  margin: 0;
-  padding: 0;
-  font-family: 'Lato';
-}
+// ********** Tipografía Aplicación **********
 
 h1 {
-  font-size: 2.8em;
-  font-weight: 800;
+  font-family: "Assistant" !important;
+  font-size: 50pt !important;
+  font-weight: bold !important;
 }
 
-p {
-  font-size: 1.1em;
-  font-weight: 100;
-  letter-spacing: 5px;
+h2 {
+  font-family: "Assistant" !important;
+  font-size: 32pt !important;
+  font-weight: bold !important;
+}
+
+button {
+  font-family: "Assistant" !important;
+  font-size: 25pt !important;
+  font-weight: bold !important;
+}
+
+label {
+  font-family: "Assistant" !important;
+  font-size: 25pt !important;
+}
+
+input {
+  border-radius: 10px !important;
+  font-family: "Assistant" !important;
+  font-size: 25pt !important;
+}
+
+// ********** Componentes App Component **********
+
+body {
+  background-image: url("./utils/images/BackgroundMain.JPG") !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center center !important;
 }
 
 .header {
-  background: #33cccc;
-  color: white;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-  grid-auto-rows: minmax(100px, auto);
+  background: #363833 !important;
+  color: white !important;
+  display: grid !important;
+  gap: 10px !important;
+  grid-auto-rows: minmax(100px, auto) !important;
+  grid-template-columns: repeat(3, 1fr) !important;
 }
 
-.btn-bgstroke {
-  font-size: 20px;
-  display: inline-block;
-  border: 1px solid white;
-  padding: 10px 20px;
-  border-radius: 10px;
-  cursor: pointer;
-  font-weight: 300;
-  margin-top: 30px;
-}
-
-.btn-bgstroke:hover {
-  background-color: white;
-  color: #33cccc;
-}
-
-.imagen {
-  margin-top: -120px;
-  -moz-transform:scale(0.2);
-  -webkit-transform:scale(0.2);
-  transform:scale(0.2);
-  margin-bottom: -160px;
-}
-
-.logo {
-  grid-column: 4;
-  grid-row: 1;
-  float: right;
-}
-
-.titulo {
-  margin-top: 30px;
-  grid-column: 1;
-  grid-row: 1;
+.headerTitle {
+  grid-column: 1 !important;
+  grid-row: 1 !important;
+  margin-left: 30px !important;
+  margin-top: 30px !important;
 }
