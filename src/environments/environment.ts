@@ -1,5 +1,5 @@
 export const environment = {
     production: false,
     baseUrl: "https://gist.githubusercontent.com/JsPinedas1/",
-    urlUserService: "c1db59db498e37bef0bcbc4bd988658f/raw/7874eb3e9bcb1bfd4ec5b01d3235185e1886448c/UxDesignGetUsers.json"
+    urlUserService: "c1db59db498e37bef0bcbc4bd988658f/raw/f6d99f5db5ea3d5ee834d95f228106604469effb/UxDesignGetUsers.json"
 };
