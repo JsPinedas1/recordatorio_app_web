@@ -11,6 +11,9 @@ export namespace BUTTON {
 export namespace LABEL {
   export const LOGIN_MAIL = "Correo";
   export const LOGIN_PASS = "Contrase\u00f1a";
+  export const MENU_DIARY = "Agenda";
+  export const MENU_EXIT = "Salir";
+  export const MENU_FOOD = "Alimentos";
 }
 
 export namespace MESSAGE {

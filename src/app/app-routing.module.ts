@@ -10,8 +10,8 @@ import { RegistroComponent } from "./registro/registro.component";
 const routes: Routes = [
   { path: "", component: LoginComponent, pathMatch: "full" },
   { path: "login", component: LoginComponent, pathMatch: "full" },
-  { path: "alimento", component: AlimentosComponent, pathMatch: "full" },
   { path: "agenda", component: AgendaComponent, pathMatch: "full" },
+  { path: "alimento", component: AlimentosComponent, pathMatch: "full" },
   { path: "registro", component: RegistroComponent, pathMatch: "full" }
 ];
 

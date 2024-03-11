@@ -10,6 +10,7 @@ import { AgendaComponent } from "./agenda/agenda.component";
 import { AlimentosComponent } from "./alimentos/alimentos.component";
 import { ButtonComponent } from "./components/button/button.component";
 import { LoginComponent } from "./login/login.component";
+import { MenuComponent } from "./components/menu/menu.component";
 import { RegistroComponent } from './registro/registro.component';
 
 @NgModule({
@@ -19,6 +20,7 @@ import { RegistroComponent } from './registro/registro.component';
     AlimentosComponent,
     ButtonComponent,
     LoginComponent,
+    MenuComponent,
     RegistroComponent
   ],
   imports: [
