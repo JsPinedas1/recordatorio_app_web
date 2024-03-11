@@ -22,13 +22,17 @@ export class MenuComponent implements OnInit {
   }
 
   diary() {
-    console.log("/agenda");
-    this.router.navigate(["/agenda"]);
+    if (!this.openDiary){
+      console.log("/agenda");
+      this.router.navigate(["/agenda"]);
+    }
   }
 
   food() {
-    console.log("/alimento");
-    this.router.navigate(["/alimento"]);
+    if (!this.openFood){
+      console.log("/alimento");
+      this.router.navigate(["/alimento"]);
+    }
   }
 
   logout() {
