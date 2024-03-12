@@ -1,10 +1,15 @@
-import { Component } from '@angular/core';
+import { Component } from "@angular/core";
+
+import * as Constants from "./utils/Constants";
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  selector: "app-root",
+  templateUrl: "./app.component.html",
+  styleUrls: ["./app.component.scss"]
 })
+
 export class AppComponent {
-  title = 'recordatorio_app_web';
+  TITLE: any = Constants.TITLE;
+
+  constructor() {}
 }

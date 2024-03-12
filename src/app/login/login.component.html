@@ -1,0 +1,28 @@
+<div class="div-login-container">
+  <div class="div-login-input-container">
+    <label for="staticEmail" >{{ CONSTANTS.LABEL.LOGIN_MAIL }}</label>
+    <div>
+      <input #correo type="text" placeholder={{CONSTANTS.LABEL.LOGIN_MAIL}}>
+    </div>
+  </div>
+  <div>
+    <label for="inputPassword">{{ CONSTANTS.LABEL.LOGIN_PASS }}</label>
+    <div>
+      <input #contrasena type="password" placeholder={{CONSTANTS.LABEL.LOGIN_PASS}}>
+    </div>
+  </div>
+  <div class="div-login-button-container">
+    <app-button
+      [buttonText]="CONSTANTS.BUTTON.LOGIN_SING_IN"
+      [style]="CONSTANTS.STYLE.BUTTON_MAIN"
+      (onClick)="getDataUser(correo.value, contrasena.value)"
+    />
+  </div>
+  <div>
+    <app-button
+      [buttonText]="CONSTANTS.BUTTON.LOGIN_SING_UP"
+      [style]="CONSTANTS.STYLE.BUTTON_OFF"
+      (onClick)="createNewUser()"
+    />
+  </div>
+</div>

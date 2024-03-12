@@ -1,0 +1,20 @@
+<app-menu [openDiary]="false" [openFood]="true"></app-menu>
+<div class="div-food-title-container">
+  <h2>{{ CONSTANTS.LABEL.MENU_FOOD }}</h2>
+</div>
+<hr/>
+<div class="div-food-top-container">
+  <app-button
+    [style]="CONSTANTS.STYLE.BUTTON_MAIN_CIRCLE_BIG"
+    [type]="CONSTANTS.STYLE.ICON_DELETE"
+    (onClick)="deleteEvent()"
+  />
+</div>
+<div class="div-food-bottom-container" *ngIf="foodDataList.length > 0">
+  <app-table
+    [columnNames]="CONSTANTS.TABLE.TABLE_HEADERS_FOOD"
+    [dataSourceList]="foodDataList"
+    [displayedColumns]="CONSTANTS.TABLE.TABLE_BODY_FOOD"
+    (onClick)="editEvent($event)"
+  ></app-table>
+</div>

@@ -1,0 +1,11 @@
+<button
+  mat-fab
+  class={{style}}
+  type="button"
+  (click)="handleClick()"
+>
+  <mat-icon *ngIf="buttonText === '' && type !== ''">
+    {{ type }}
+  </mat-icon>
+  {{ buttonText }}
+</button>

@@ -1,0 +1,59 @@
+a, li {
+  font-family: "Assistant";
+  font-size: 25pt;
+}
+
+.menuSideBarSeparator {
+  background-color: #FFFFFF;
+}
+
+.menuSideBar {
+  background-color: #94B5ED;
+  height: 100%;
+  left: 0;
+  margin-top: 100px;
+  position: fixed;
+  top: 0;
+  width: 250px;
+}
+
+.menuSideBar li {
+  cursor: pointer;
+  margin-bottom: 1px;
+}
+
+.menuSideBar ul li:hover {
+  background-color: #363833;
+}
+
+.menuSideBar ul {
+  background-color: #FFFFFF;
+  list-style-type: none;
+  margin-top: 2px;
+  padding: 0;
+}
+
+.menuSideBar ul li {
+  background-color: #4A516B;
+  padding: 10px 20px;
+}
+
+.menuSideBar ul li a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.menuSideBarSelected {
+  background-color: #4D5E9E !important;
+  cursor: default !important;
+}
+
+.menuSideBarSelected:hover {
+  background-color: #4D5E9E !important;
+}
+
+@media only screen and (max-width: 543px) {
+  .menuSideBar {
+    margin-top: 110px;
+  }
+}

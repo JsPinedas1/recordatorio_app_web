@@ -1,27 +1,59 @@
-# RecordatorioAppWeb
+# Tabla de Contenido
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.6.
+1. [Requisitos del Sistema](#requisitos-del-sistema)
+2. [Alistar ambiente](#alistar-ambiente)
+3. [Desplegar proyecto](#desplegar-proyecto)
+4. [Usuario de pruebas](#usuario-de-pruebas)
 
-## Development server
+## Requisitos del Sistema
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Para utilizar esta aplicación, se deben cumplir los siguientes requisitos:
 
-## Code scaffolding
+- **Node**: Instalar Node versión 18.15.0.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- **Angular**: Instalar Angular CLI versión 15.2.6 mediante el comando 
+```bash
+npm i @angular/cli@15.2.6
+```
 
-## Build
+## Alistar ambiente
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- Una vez ingresado al [repositorio](https://github.com/JsPinedas1/recordatorio_app_web) podemos clonar el repositorio mediante.
 
-## Running unit tests
+**HTTPS**: 
+```bash
+https://github.com/JsPinedas1/recordatorio_app_web.git
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+**SSH**: 
+```bash
+git@github.com:JsPinedas1/recordatorio_app_web.git
+```
 
-## Running end-to-end tests
+**HTTPS**:
+```bash
+gh repo clone JsPinedas1/recordatorio_app_web
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+- Teniendo ya el repositorio clonado en la máquina, el siguiente paso es ingresar a la ruta del proyecto e instalar las librerias del proyecto mediante el comando.
+```bash
+npm install --force
+```
 
-## Further help
+Ya realizado los pasos el proyecto estara listo para desplegar.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Desplegar proyecto
+
+- Ejecute `ng serve` para un servidor de pruebas.
+```bash
+ng serve
+```
+
+- Navegue a `http://localhost:4200/` o el puerto asignado por defecto en su máquina.
+
+## Usuario de pruebas
+
+Estas son las credenciales para el usuario de pruebas.
+
+**Correo:** fa.torres@uniandes.edu.co
+**Contraseña:** Uniandes2024*

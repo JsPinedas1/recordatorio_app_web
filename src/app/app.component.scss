@@ -1,0 +1,65 @@
+// ********** Tipografía Aplicación **********
+
+h1 {
+  font-family: "Assistant" !important;
+  font-size: 50pt !important;
+  font-weight: bold !important;
+}
+
+h2 {
+  font-family: "Assistant" !important;
+  font-size: 32pt !important;
+  font-weight: bold !important;
+  color: #323337;
+}
+
+h3 {
+  font-family: "Assistant" !important;
+  font-size: 27pt !important;
+  color: #323337;
+}
+
+hr {
+  color: #323337;
+}
+
+button {
+  font-family: "Assistant" !important;
+  font-size: 25pt !important;
+  font-weight: bold !important;
+}
+
+label {
+  font-family: "Assistant" !important;
+  font-size: 25pt !important;
+}
+
+input {
+  border-radius: 10px !important;
+  font-family: "Assistant" !important;
+  font-size: 25pt !important;
+}
+
+// ********** Componentes App Component **********
+
+body {
+  background-image: url("./utils/images/BackgroundMain.JPG") !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center center !important;
+}
+
+.header {
+  background: #363833 !important;
+  color: white !important;
+  display: grid !important;
+  gap: 10px !important;
+  grid-auto-rows: minmax(100px, auto) !important;
+}
+
+.headerTitle {
+  grid-column: 1 !important;
+  grid-row: 1 !important;
+  margin-left: 30px !important;
+  margin-top: 30px !important;
+}

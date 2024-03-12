@@ -1,0 +1,38 @@
+hr {
+  margin-left: 300px;
+  width: 75% !important;
+}
+
+.div-food-title-container {
+  display: flex;
+  margin-left: 350px;
+  margin-top: 50px;
+}
+
+.div-food-bottom-container {
+  margin-left: 350px;
+  margin-top: 30px;
+  max-width: 1300px;
+}
+
+.div-food-top-container {
+  align-items: end;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 200px;
+  padding: 0 20px;
+}
+
+@media screen and (max-width: 1500px) {
+  .div-food-top-container {
+    margin-right: 50px;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .div-food-bottom-container {
+    padding: 0 20px;
+    max-width: 1000px;
+  }
+}

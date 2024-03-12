@@ -1,0 +1,7 @@
+<div class="menuSideBar">
+  <ul>
+    <li (click)="diary()" [ngClass]="{menuSideBarSelected: openDiary}"><a>{{ CONSTANTS.LABEL.MENU_DIARY }}</a></li>
+    <li (click)="food()" [ngClass]="{menuSideBarSelected: openFood}"><a>{{ CONSTANTS.LABEL.MENU_FOOD }}</a></li>
+    <li (click)="logout()"><a>{{ CONSTANTS.LABEL.MENU_EXIT }}</a></li>
+  </ul>
+</div>
