@@ -29,7 +29,7 @@
       <ng-container *ngIf="columnName.value === 'id'">
         <app-button
           [style]="CONSTANTS.STYLE.BUTTON_MAIN_CIRCLE_SHORT"
-          (onClick)="editEvent(element[columnName.value])"
+          (onClick)="handleClick(element)"
         />
       </ng-container>
     </td>

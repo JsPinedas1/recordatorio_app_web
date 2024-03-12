@@ -1,0 +1,47 @@
+h2, h3, hr {
+  color: #FFFFFF !important;
+}
+
+hr {
+  width: 80%;
+}
+
+label {
+  color: #FFFFFF !important;
+}
+
+.button-row {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.column {
+  flex: 1;
+  padding: 0 10px;
+}
+
+.foodContainer {
+  display: flex;
+}
+
+.modalButtonContainer {
+  align-items: end !important;
+  display: flex;
+  flex-direction: column !important;
+  justify-content: center !important;
+  margin-right: 30px;
+  margin-top: 20px;
+}
+
+.modalContainer {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.modalInput {
+  margin-top: 20px;
+}

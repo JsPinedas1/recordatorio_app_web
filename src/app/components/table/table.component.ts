@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from "@angular/core";
+import { Component, Input, OnInit, Output, EventEmitter } from "@angular/core";
 import { MatTableDataSource } from "@angular/material/table";
 import { SelectionModel } from "@angular/cdk/collections";
 import * as Constants from "src/app/utils/Constants";
@@ -6,7 +6,7 @@ import * as Constants from "src/app/utils/Constants";
 @Component({
   selector: "app-table",
   templateUrl: "./table.component.html",
-  styleUrls: ["./table.component.css"],
+  styleUrls: ["./table.component.scss", "../../app.component.scss"],
 })
 
 export class TableComponent implements OnInit {
@@ -14,6 +14,8 @@ export class TableComponent implements OnInit {
   @Input() columnNames: any[] = [];
   @Input() dataSourceList: any[] = [];
   @Input() displayedColumns: string[] = [];
+
+  @Output() onClick: EventEmitter<any> = new EventEmitter();
 
   CONSTANTS: any = Constants;
 
@@ -49,8 +51,8 @@ export class TableComponent implements OnInit {
     return `${this.selection.isSelected(row) ? "deselect" : "select"} row ${row.position + 1}`;
   }
 
-  editEvent(id: number) {
-    console.log(id);
+  handleClick(object: any): void {
+    this.onClick.emit(object);
   }
 
 }

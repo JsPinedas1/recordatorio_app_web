@@ -1,11 +1,11 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from "@angular/core";
 import { Router } from "@angular/router";
-import * as Constants from 'src/app/utils/Constants';
+import * as Constants from "src/app/utils/Constants";
 
 @Component({
-  selector: 'app-menu',
-  templateUrl: './menu.component.html',
-  styleUrls: ['./menu.component.css']
+  selector: "app-menu",
+  templateUrl: "./menu.component.html",
+  styleUrls: ["./menu.component.scss", "../../app.component.scss"]
 })
 export class MenuComponent implements OnInit {
 

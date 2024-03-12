@@ -11,10 +11,12 @@ import { ToastrModule } from "ngx-toastr";
 import { AgendaComponent } from "./agenda/agenda.component";
 import { AlimentosComponent } from "./alimentos/alimentos.component";
 import { ButtonComponent } from "./components/button/button.component";
+import { DialogComponent } from "./components/dialog/dialog.component";
 import { LoginComponent } from "./login/login.component";
 import { MenuComponent } from "./components/menu/menu.component";
 import { RegistroComponent } from './registro/registro.component';
 import { TableComponent } from "./components/table/table.component";
+import { MatDialogModule } from "@angular/material/dialog";
 
 @NgModule({
   declarations: [
@@ -22,19 +24,21 @@ import { TableComponent } from "./components/table/table.component";
     AgendaComponent,
     AlimentosComponent,
     ButtonComponent,
+    DialogComponent,
     LoginComponent,
     MenuComponent,
     RegistroComponent,
-    TableComponent
+    TableComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    ToastrModule.forRoot(),
     MatCheckboxModule,
+    MatDialogModule,
     MatTableModule,
+    ToastrModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]

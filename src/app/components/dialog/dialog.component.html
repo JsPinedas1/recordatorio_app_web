@@ -1,0 +1,68 @@
+<div class="modalContainer">
+  <div>
+    <h3>{{ data.title }}</h3>
+  </div>
+  <hr *ngIf="data.type === CONSTANTS.LABEL.MODAL_TYPE_EDIT_FOOD" />
+
+  <div class="foodContainer" *ngIf="data.type === CONSTANTS.LABEL.MODAL_TYPE_EDIT_FOOD">
+    <div class="column">
+      <div>
+        <div class="modalInput">
+          <label>{{ CONSTANTS.LABEL.LABEL_CODE }}</label>
+          <div>
+            <input type="text" value={{data.objectCodigo}} disabled="true">
+          </div>
+        </div>
+        <div class="modalInput">
+          <label>{{ CONSTANTS.LABEL.LABEL_DATE }}</label>
+          <div>
+            <input type="text" value={{data.objectFecha}} disabled="true">
+          </div>
+        </div>
+        <div class="modalInput">
+          <label>{{ CONSTANTS.LABEL.LABEL_DAYS }}</label>
+          <div>
+            <input type="text" value={{data.objectDias}} disabled="true">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="column">
+      <div>
+        <div class="modalInput">
+          <label>{{ CONSTANTS.LABEL.LABEL_NAME }}</label>
+          <div>
+            <input type="text" value={{data.objectNombre}}>
+          </div>
+        </div>
+        <div class="modalInput">
+          <label>{{ CONSTANTS.LABEL.LABEL_AMOUNT }}</label>
+          <div>
+            <input type="text" value={{data.objectCantidad}}>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div *ngIf="data.type === CONSTANTS.LABEL.MODAL_TYPE_DELETE">
+    <app-button
+      [buttonText]="CONSTANTS.BUTTON.BUTTON_CANCEL"
+      [style]="CONSTANTS.STYLE.BUTTON_OFF_SHORT"
+      (onClick)="closeDialog()"
+    />
+    <app-button
+      [buttonText]="CONSTANTS.BUTTON.BUTTON_CONFIRM"
+      [style]="CONSTANTS.STYLE.BUTTON_MAIN_SHORT"
+      (onClick)="saveDialog()"
+    />
+  </div>
+</div>
+
+<div *ngIf="data.type === CONSTANTS.LABEL.MODAL_TYPE_EDIT_FOOD" class="modalButtonContainer">
+  <app-button
+    [style]="CONSTANTS.STYLE.BUTTON_MAIN_CIRCLE_BIG"
+    (onClick)="saveDialog()"
+  />
+</div>
