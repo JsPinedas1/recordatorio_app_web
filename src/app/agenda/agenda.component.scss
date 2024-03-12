@@ -4,11 +4,12 @@ hr {
 }
 
 .div-diary-container {
-  align-items: center;
+  align-items: end;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 20px;
+  margin-right: 200px;
+  padding: 0 20px;
 }
 
 .div-diary-title-container {
@@ -16,3 +17,32 @@ hr {
   margin-left: 350px;
   margin-top: 50px;
 }
+
+.div-diary-bottom-container {
+  margin-left: 350px;
+  margin-top: 30px;
+  max-width: 1300px;
+}
+
+.div-diary-top-container {
+  align-items: end;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 200px;
+  padding: 0 20px;
+}
+
+@media screen and (max-width: 1500px) {
+  .div-diary-top-container {
+    margin-right: 50px;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .div-diary-bottom-container {
+    padding: 0 20px;
+    max-width: 1000px;
+  }
+}
+

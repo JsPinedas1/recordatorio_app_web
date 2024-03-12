@@ -46,6 +46,50 @@
     </div>
   </div>
 
+  <hr *ngIf="data.type === CONSTANTS.LABEL.MODAL_TYPE_EDIT_AGEND" />
+
+  <div class="foodContainer" *ngIf="data.type === CONSTANTS.LABEL.MODAL_TYPE_EDIT_AGEND">
+    <div class="column">
+      <div>
+        <div class="modalInput">
+          <label>{{ CONSTANTS.LABEL.LABEL_DESCRIPCION }}</label>
+          <div>
+            <input type="text" value={{data.objectDescripcion}} disabled="true">
+          </div>
+        </div>
+        <div class="modalInput">
+          <label>{{ CONSTANTS.LABEL.LABEL_FECHA }}</label>
+          <div>
+            <input type="text" value={{data.objectFecha}}>
+          </div>
+        </div>
+        <div class="modalInput">
+          <label>{{ CONSTANTS.LABEL.LABEL_HORA_INICIAL }}</label>
+          <div>
+            <input type="text" value={{data.objectHoraInicial}}>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="column">
+      <div>
+        <div class="modalInput">
+          <label>{{ CONSTANTS.LABEL.LABEL_HORA_FINAL }}</label>
+          <div>
+            <input type="text" value={{data.objectHoraFinal}}>
+          </div>
+        </div>
+        <div class="modalInput">
+          <label>{{ CONSTANTS.LABEL.LABEL_RECORDAR_CADA }}</label>
+          <div>
+            <input type="text" value={{data.objectRecordarCada}}>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div *ngIf="data.type === CONSTANTS.LABEL.MODAL_TYPE_DELETE">
     <app-button
       [buttonText]="CONSTANTS.BUTTON.BUTTON_CANCEL"
@@ -61,6 +105,14 @@
 </div>
 
 <div *ngIf="data.type === CONSTANTS.LABEL.MODAL_TYPE_EDIT_FOOD" class="modalButtonContainer">
+  <app-button
+    [buttonText]="CONSTANTS.BUTTON.BUTTON_OK"
+    [style]="CONSTANTS.STYLE.BUTTON_MAIN_CIRCLE_BIG"
+    (onClick)="saveDialog()"
+  />
+</div>
+
+<div *ngIf="data.type === CONSTANTS.LABEL.MODAL_TYPE_EDIT_AGEND" class="modalButtonContainer">
   <app-button
     [buttonText]="CONSTANTS.BUTTON.BUTTON_OK"
     [style]="CONSTANTS.STYLE.BUTTON_MAIN_CIRCLE_BIG"

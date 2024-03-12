@@ -21,12 +21,19 @@ export namespace LABEL {
   export const MODAL_CANCEL = "Cancelado";
   export const MODAL_TYPE_DELETE = "Eliminar";
   export const MODAL_TYPE_EDIT_FOOD = "Editar Alimento";
+  export const MODAL_TYPE_EDIT_AGEND = "Editar Agenda";
 
   export const LABEL_CODE = "C\u00f3digo de barras";
   export const LABEL_NAME = "Nombre del producto";
   export const LABEL_DATE = "Fecha de caducidad";
   export const LABEL_AMOUNT = "Cantidad";
   export const LABEL_DAYS = "D\u00edas";
+
+  export const LABEL_DESCRIPCION = "Descripci\u00f3n"
+  export const LABEL_FECHA = "Fecha"
+  export const LABEL_HORA_INICIAL = "Hora inicial"
+  export const LABEL_HORA_FINAL = "Hora final"
+  export const LABEL_RECORDAR_CADA = "Recordar cada"
 }
 
 export namespace MESSAGE {
@@ -34,6 +41,7 @@ export namespace MESSAGE {
   export const MESSAGE_MODAL_DELETE = "El registro se ha eliminado";
   export const MESSAGE_MODAL_DELETE_CONFIRM = "\u00bf Desea eliminar este registro \u003f";
   export const MESSAGE_MODAL_EDIT_TITLE = "Editar Alimento";
+  export const MESSAGE_MODAL_EDIT_AGENDA_TITLE = "Editar agenda";
   export const MESSAGE_MODAL_EDIT_SUCCESS = "Se guardaron los cambios";
 }
 
@@ -59,6 +67,15 @@ export namespace TABLE {
     {value: "fecha", name: LABEL.LABEL_DATE},
     {value: "dias", name: LABEL.LABEL_DAYS},
     {value: "cantidad", name: LABEL.LABEL_AMOUNT},
+    {value: "id", name: ""}
+  ];
+  export const TABLE_BODY_AGEND = ["select", "descripcion", "fecha", "horaInicial", "horaFinal", "recordarCada", "id"];
+  export const TABLE_HEADERS_AGEND = [
+    {value: "descripcion", name: LABEL.LABEL_DESCRIPCION},
+    {value: "fecha", name: LABEL.LABEL_FECHA},
+    {value: "horaInicial", name: LABEL.LABEL_HORA_INICIAL},
+    {value: "horaFinal", name: LABEL.LABEL_HORA_FINAL},
+    {value: "recordarCada", name: LABEL.LABEL_RECORDAR_CADA},
     {value: "id", name: ""}
   ];
 }
