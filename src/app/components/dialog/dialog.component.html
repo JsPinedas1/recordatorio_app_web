@@ -114,6 +114,7 @@
 
 <div *ngIf="data.type === CONSTANTS.LABEL.MODAL_TYPE_EDIT_AGEND" class="modalButtonContainer">
   <app-button
+    [buttonText]="CONSTANTS.BUTTON.BUTTON_OK"
     [style]="CONSTANTS.STYLE.BUTTON_MAIN_CIRCLE_BIG"
     (onClick)="saveDialog()"
   />
