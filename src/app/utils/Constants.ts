@@ -8,6 +8,7 @@ export namespace BUTTON {
   export const LOGIN_SING_UP = "REG\u00cdSTRATE";
   export const BUTTON_CANCEL = "CANCELAR";
   export const BUTTON_CONFIRM = "ACEPTAR";
+  export const BUTTON_OK = "OK";
 }
 
 export namespace LABEL {
@@ -53,6 +54,9 @@ export namespace STYLE {
   export const BUTTON_MAIN_CIRCLE_SHORT = "buttonMainCircleShort";
   export const BUTTON_OFF_CIRCLE_BIG = "buttonOffCircleBig";
   export const BUTTON_OFF_CIRCLE_SHORT = "buttonOffCircleShort";
+
+  export const ICON_DELETE = "delete";
+  export const ICON_PEN = "edit icon";
 }
 
 export namespace TABLE {
