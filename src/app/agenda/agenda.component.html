@@ -4,5 +4,16 @@
 </div>
 <hr/>
 <div class="div-diary-container">
-  <!-- Contenido -->
+  <app-button
+    [style]="CONSTANTS.STYLE.BUTTON_MAIN_CIRCLE_BIG"
+    (onClick)="deleteEvent()"
+  />
+</div>
+<div class="div-diary-bottom-container" *ngIf="diaryDataList.length > 0">
+  <app-table
+    [columnNames]="CONSTANTS.TABLE.TABLE_HEADERS_AGEND"
+    [dataSourceList]="diaryDataList"
+    [displayedColumns]="CONSTANTS.TABLE.TABLE_BODY_AGEND"
+    (onClick)="editEvent($event)"
+  ></app-table>
 </div>
