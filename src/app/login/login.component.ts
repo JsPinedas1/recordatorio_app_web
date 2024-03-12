@@ -27,9 +27,9 @@ export class LoginComponent implements OnInit {
 
   getDataUser(correo: string, contrasena: string) {
     this.loginService.getLoginUser().subscribe({
-      next: dataUsuarios => {
-        console.log("dataUsuarios", dataUsuarios);
-        const dataResponse = this.validateDataUser(correo, contrasena, dataUsuarios);
+      next: dataUsers => {
+        console.log("dataUsuarios", dataUsers);
+        const dataResponse = this.validateDataUser(correo, contrasena, dataUsers);
         if (dataResponse !== "") {
           this.toastr.success(this.CONSTANTS.MESSAGE.MESSAGE_LOGIN_WELCOME.replace("{}", dataResponse));
           this.router.navigate(["/alimento"]);

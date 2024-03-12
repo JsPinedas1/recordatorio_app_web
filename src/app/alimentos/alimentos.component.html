@@ -3,6 +3,16 @@
   <h2>{{ CONSTANTS.LABEL.MENU_FOOD }}</h2>
 </div>
 <hr/>
-<div class="div-food-container">
-  z
+<div class="div-food-top-container">
+  <app-button
+    [style]="CONSTANTS.STYLE.BUTTON_MAIN_CIRCLE_BIG"
+    (onClick)="deleteEvent()"
+  />
+</div>
+<div class="div-food-bottom-container" *ngIf="foodDataList.length > 0">
+  <app-table
+    [columnNames]="CONSTANTS.TABLE.TABLE_HEADERS_FOOD"
+    [dataSourceList]="foodDataList"
+    [displayedColumns]="CONSTANTS.TABLE.TABLE_BODY_FOOD"
+  ></app-table>
 </div>

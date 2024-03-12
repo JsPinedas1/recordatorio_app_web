@@ -26,3 +26,22 @@ button {
 .buttonOff:hover {
   background-color: #62784D;
 }
+
+.buttonMainCircleBig {
+  background-color: #1E4A26;
+  border-radius: 50%;
+  height: 70px;
+  width: 70px;
+}
+
+.buttonMainCircleShort {
+  background-color: #1E4A26;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+}
+
+.buttonMainCircleBig:hover,
+.buttonMainCircleShort:hover {
+  background-color: #7FB848;
+}

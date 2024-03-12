@@ -11,7 +11,7 @@ export class ButtonComponent {
   @Input() style: string = "";
   @Output() onClick: EventEmitter<any> = new EventEmitter();
 
-  constructor() {}
+  constructor() { }
 
   handleClick(): void {
     this.onClick.emit();
